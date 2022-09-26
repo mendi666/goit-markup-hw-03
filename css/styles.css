@@ -11,6 +11,8 @@
   --header-link-second-color: #000000;
   --border-portfolio-color: 1px solid #eeeeee;
   --header-border-color: 1px solid #ececec;
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 p,
@@ -87,7 +89,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--main-link-color);
+  color: var(--accent-color);
 }
 
 .visually-hidden {
@@ -123,8 +125,6 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding: 25px;
   border-bottom: var(--header-border-color);
 }
 
@@ -155,6 +155,8 @@ span.second-color-header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
 }
 
 .header-link {
@@ -213,13 +215,16 @@ span.second-color-header {
 
 /* BENEFITS */
 
+.benefits {
+  padding-top: 94px;
+}
+
 .benefits-container {
   display: flex;
 }
 
 .benefits-item {
   max-width: 270px;
-  padding-bottom: 100px;
 }
 
 .benefits-item:not(:last-child) {
@@ -229,10 +234,6 @@ span.second-color-header {
 .benefits-list {
   display: flex;
   justify-items: center;
-}
-
-.benefits {
-  margin-top: 94px;
 }
 
 .benefits-name {
@@ -255,6 +256,10 @@ span.second-color-header {
 
 /*//////////////////////// WHAT WE DO ///////////////////////*/
 
+.whatwedo {
+  padding: 94px 0;
+}
+
 .whatwedo-title {
   font-style: normal;
   font-weight: 700;
@@ -270,14 +275,17 @@ span.second-color-header {
 .whatwedo-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 /* TEAM */
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding-bottom: 94px;
+  padding: 94px 0;
+}
+
+.team-information {
+  padding: 30px 30px;
 }
 
 .team-list {
@@ -289,6 +297,7 @@ span.second-color-header {
 .team-item {
   background-color: var(--contrast-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
 }
 
 .team-title {
@@ -300,7 +309,6 @@ span.second-color-header {
   color: var(--secondary-text-color);
   text-align: center;
   margin: 0 auto;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .team-name {
@@ -310,7 +318,6 @@ span.second-color-header {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-top: 30px;
   text-align: center;
 }
 .team-job-position {
@@ -319,7 +326,6 @@ span.second-color-header {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
   text-align: center;
 }
 /* FOOTER */
@@ -383,20 +389,19 @@ span.second-color-footer {
   background: var(--filter-btn-color);
   border-radius: 4px;
   cursor: pointer;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
+  border: none;
 }
 
 /* PORTFOLIO */
 
-.portfolio-button {
-  padding-top: 94px;
+.portfolio-section {
+  padding: 94px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
   margin: -30px 0px 0px -30px;
 }
 .portfolio-item {
@@ -410,19 +415,16 @@ span.second-color-footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
-  padding-left: 24px;
-  margin-bottom: 4px;
 }
 .portfolio-category {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .portfolio-border {
+  padding: 20px 24px;
   border-left: var(--border-portfolio-color);
   border-right: var(--border-portfolio-color);
   border-bottom: var(--border-portfolio-color);
